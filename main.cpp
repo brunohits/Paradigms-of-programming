@@ -3,10 +3,8 @@
 
 using namespace std;
 
-void null(){}
-
 int *secondPartOfSort(int count, int arrCopy[], int firstIndex, int secondIndex) {
-    (arrCopy[firstIndex] > arrCopy[secondIndex]) ? swap(arrCopy[firstIndex], arrCopy[secondIndex]) : null();
+    (arrCopy[firstIndex] > arrCopy[secondIndex]) ? swap(arrCopy[firstIndex], arrCopy[secondIndex]) : void();
     arrCopy = secondIndex != count - 1 ? secondPartOfSort(count, arrCopy, firstIndex, secondIndex + 1) : arrCopy;
     return arrCopy;
 }
@@ -17,17 +15,17 @@ int *firstPartOfSort(int count, int arrCopy[], int index) {
 }
 
 void calculateAndPrint(int quantileCount, int count, double quantileCopy[], int arrCopy[], int counter) {
-    counter != quantileCount ? cout << quantileCopy[counter] << " quantile: " << arrCopy[(int) (quantileCopy[counter] * count)] << endl, calculateAndPrint(quantileCount, count, quantileCopy, arrCopy, counter + 1) : null();
+    counter != quantileCount ? cout << quantileCopy[counter] << " quantile: " << arrCopy[(int) (quantileCopy[counter] * count)] << endl, calculateAndPrint(quantileCount, count, quantileCopy, arrCopy, counter + 1) : void();
 }
 
 void initializeDoubleArray(double arr[], int count, int index) {
     cin >> arr[index];
-    index != count - 1 ? initializeDoubleArray(arr, count, index + 1) : null();
+    index != count - 1 ? initializeDoubleArray(arr, count, index + 1) : void();
 }
 
 void initializeIntArray(int arr[], int count, int index) {
     cin >> arr[index];
-    index != count - 1 ? initializeIntArray(arr, count, index + 1) : null();
+    index != count - 1 ? initializeIntArray(arr, count, index + 1) : void();
 }
 
 
