@@ -1,0 +1,4 @@
+C:/Users/NikSu/CLionProjects/parallelProgramming/cmake-build-debug/CMakeFiles/openmp_test_clion.dir
+C:/Users/NikSu/CLionProjects/parallelProgramming/cmake-build-debug/CMakeFiles/parallelProgramming.dir
+C:/Users/NikSu/CLionProjects/parallelProgramming/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/NikSu/CLionProjects/parallelProgramming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
